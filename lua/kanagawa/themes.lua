@@ -100,8 +100,7 @@ return {
                 bg_m3      = palette.sumiInk0,
                 bg_m2      = palette.sumiInk1,
                 bg_m1      = palette.sumiInk2,
-                bg         = "#282F34",
-                bg_p1      = palette.sumiInk4,
+                bg         = palette.sumiInk3,                bg_p1      = palette.sumiInk4,
                 bg_p2      = palette.sumiInk5,
 
                 special    = palette.springViolet1,
