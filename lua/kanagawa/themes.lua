@@ -84,6 +84,8 @@ local c = require("kanagawa.lib.color")
 ---@field ui UiElements
 ---@field term ColorSpec[]
 
+-- Всё нормально
+
 return {
     ---@param palette PaletteColors
     ---@return ThemeColors
