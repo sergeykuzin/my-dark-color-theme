@@ -99,12 +99,12 @@ return {
                 bg_dim     = palette.sumiInk1,
                 bg_gutter  = palette.sumiInk4,
 
-                bg_m3      = palette.sumiInk0,
-                bg_m2      = palette.sumiInk1,
-                bg_m1      = palette.sumiInk2,
+                bg_m3      = "#282F34",
+                bg_m2      = "#282F34",
+                bg_m1      = "#282F34",
                 bg         = "#282F34",
-                bg_p1      = palette.sumiInk4,
-                bg_p2      = palette.sumiInk5,
+                bg_p1      = "#282F34",
+                bg_p2      = "#282F34",
 
                 special    = palette.springViolet1,
                 nontext    = palette.sumiInk6,
