@@ -2,6 +2,7 @@
 local palette = {
     -- Мои константы
     myBg = "#282F34",
+    myBgDark = "#161a1d",
     myText = "#83c193",
 
     -- Bg Shades

@@ -123,9 +123,9 @@ return {
                 },
                 float      = {
                     fg        = palette.oldWhite,
-                    bg        = palette.sumiInk0,
+                    bg        = palette.myBgDark,
                     fg_border = palette.sumiInk6,
-                    bg_border = palette.sumiInk0,
+                    bg_border = palette.myBgDark,
                 },
             },
             syn = {
@@ -174,7 +174,7 @@ return {
                 hint    = palette.waveAqua1,
             },
             term = {
-                palette.sumiInk0, -- black
+                palette.myBgDark, -- black
                 palette.autumnRed, -- red
                 palette.autumnGreen, -- green
                 palette.boatYellow2, -- yellow
