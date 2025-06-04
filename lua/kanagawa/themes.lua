@@ -90,7 +90,8 @@ return {
     wave = function(palette)
         return {
             ui = {
-                fg         = "#83c193",
+                -- fg         = "#83c193",
+                fg         = "#A9C181",
                 fg_dim     = palette.oldWhite,
                 fg_reverse = palette.waveBlue1,
 
