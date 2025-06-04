@@ -90,8 +90,7 @@ return {
     wave = function(palette)
         return {
             ui = {
-                -- fg         = "#83c193",
-                fg         = "#A9C181",
+                fg         = "#83c193",
                 fg_dim     = palette.oldWhite,
                 fg_reverse = palette.waveBlue1,
 
@@ -101,7 +100,8 @@ return {
                 bg_m3      = palette.sumiInk0,
                 bg_m2      = palette.sumiInk1,
                 bg_m1      = palette.sumiInk2,
-                bg         = palette.sumiInk3,                bg_p1      = palette.sumiInk4,
+                bg         = "#282F34",
+                bg_p1      = palette.sumiInk4,
                 bg_p2      = palette.sumiInk5,
 
                 special    = palette.springViolet1,
