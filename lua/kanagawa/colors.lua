@@ -6,9 +6,9 @@ local palette = {
     myTextForDarkTheme = "#83c193",
     
     -- Мои константы для светлой темы
-    myBgLight = "#F2ECBC",
+    myBgLight = "#FFFFDD",
     myBgNotLight = "#EDE5A6", -- sumiInk0
-    myTextForLightTheme = "#060114",
+    myTextForLightTheme = "#000000",
 
     -- Bg Shades
     sumiInk0 = "#16161D",
