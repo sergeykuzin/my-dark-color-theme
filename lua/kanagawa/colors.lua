@@ -1,8 +1,8 @@
 ---@class PaletteColors
 local palette = {
     -- Мои константы
-    myBg = "#282F34",
-    myBgDark = "#21272c", -- sumiInk0
+    myBgDark = "#282F34",
+    myBgVeryDark = "#21272c", -- sumiInk0
     myText = "#83c193",
 
     -- Bg Shades

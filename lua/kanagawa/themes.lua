@@ -97,14 +97,14 @@ return {
                 fg_reverse = palette.waveBlue1,
 
                 bg_dim     = palette.sumiInk1,
-                bg_gutter  = palette.myBg,
+                bg_gutter  = palette.myBgDark,
 
-                bg_m3      = palette.myBg,
-                bg_m2      = palette.myBg,
-                bg_m1      = palette.myBg,
-                bg         = palette.myBg,
-                bg_p1      = palette.myBg,
-                bg_p2      = palette.myBg,
+                bg_m3      = palette.myBgDark,
+                bg_m2      = palette.myBgDark,
+                bg_m1      = palette.myBgDark,
+                bg         = palette.myBgDark,
+                bg_p1      = palette.myBgDark,
+                bg_p2      = palette.myBgDark,
 
                 special    = palette.springViolet1,
                 nontext    = palette.sumiInk6,
@@ -123,9 +123,9 @@ return {
                 },
                 float      = {
                     fg        = palette.oldWhite,
-                    bg        = palette.myBgDark,
+                    bg        = palette.myBgVeryDark,
                     fg_border = palette.sumiInk6,
-                    bg_border = palette.myBgDark,
+                    bg_border = palette.myBgVeryDark,
                 },
             },
             syn = {
@@ -174,7 +174,7 @@ return {
                 hint    = palette.waveAqua1,
             },
             term = {
-                palette.myBgDark, -- black
+                palette.myBgVeryDark, -- black
                 palette.autumnRed, -- red
                 palette.autumnGreen, -- green
                 palette.boatYellow2, -- yellow
