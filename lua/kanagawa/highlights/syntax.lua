@@ -9,7 +9,7 @@ function M.setup(colors, config)
 
     return {
         -- *Comment	any comment
-        Comment = vim.tbl_extend("force", { fg = theme.syn.comment, italic = true }, config.commentStyle),
+        Comment = vim.tbl_extend("force", { fg = theme.syn.comment }, config.commentStyle),
 
         -- *Constant	any constant
         Constant = { fg = theme.syn.constant },
