@@ -303,19 +303,19 @@ return {
     lotus = function(palette)
         return {
             ui = {
-                fg         = palette.lotusInk1,
+                fg         = palette.myTextForLightTheme,
                 fg_dim     = palette.lotusInk2,
                 fg_reverse = palette.lotusGray,
 
                 bg_dim     = palette.lotusWhite1,
-                bg_gutter  = palette.lotusWhite4,
+                bg_gutter  = palette.myBgLight,
 
-                bg_m3      = palette.lotusWhite0,
-                bg_m2      = palette.lotusWhite1,
-                bg_m1      = palette.lotusWhite2,
-                bg         = palette.lotusWhite3,
-                bg_p1      = palette.lotusWhite4,
-                bg_p2      = palette.lotusWhite5,
+                bg_m3      = palette.myBgLight,
+                bg_m2      = palette.myBgLight,
+                bg_m1      = palette.myBgLight,
+                bg         = palette.myBgLight,
+                bg_p1      = palette.myBgLight,
+                bg_p2      = palette.myBgLight,
 
                 nontext    = palette.lotusViolet1,
                 whitespace = palette.lotusViolet1,
@@ -334,31 +334,31 @@ return {
                 },
                 float      = {
                     fg        = palette.lotusInk2,
-                    bg        = palette.lotusWhite0,
+                    bg        = palette.myBgNotLight,
                     fg_border = palette.lotusGray2,
-                    bg_border = palette.lotusWhite0,
+                    bg_border = palette.myBgNotLight,
                 },
             },
             syn = {
-                string     = palette.lotusGreen,
+                string     = palette.myTextForLightTheme,
                 variable   = "none",
-                number     = palette.lotusPink,
-                constant   = palette.lotusOrange,
-                identifier = palette.lotusYellow,
-                parameter  = palette.lotusBlue5,
-                fun        = palette.lotusBlue4,
-                statement  = palette.lotusViolet4,
-                keyword    = palette.lotusViolet4,
-                operator   = palette.lotusYellow2,
-                preproc    = palette.lotusRed,
-                type       = palette.lotusAqua,
-                regex      = palette.lotusYellow2,
-                deprecated = palette.lotusGray3,
-                comment    = palette.lotusGray3,
-                punct      = palette.lotusTeal1,
-                special1   = palette.lotusTeal2,
-                special2   = palette.lotusRed,
-                special3   = palette.lotusRed,
+                number     = palette.myTextForLightTheme,
+                constant   = palette.myTextForLightTheme,
+                identifier = palette.myTextForLightTheme,
+                parameter  = palette.myTextForLightTheme,
+                fun        = palette.myTextForLightTheme,
+                statement  = palette.myTextForLightTheme,
+                keyword    = palette.myTextForLightTheme,
+                operator   = palette.myTextForLightTheme,
+                preproc    = palette.myTextForLightTheme,
+                type       = palette.myTextForLightTheme,
+                regex      = palette.myTextForLightTheme,
+                deprecated = palette.myTextForLightTheme,
+                comment    = palette.myTextForLightTheme,
+                punct      = palette.myTextForLightTheme,
+                special1   = palette.myTextForLightTheme,
+                special2   = palette.myTextForLightTheme,
+                special3   = palette.myTextForLightTheme,
             },
             vcs = {
                 added   = palette.lotusGreen2,
@@ -379,7 +379,7 @@ return {
                 hint    = palette.lotusAqua2,
             },
             term = {
-                palette.sumiInk3, -- black
+                palette.myBgNotLight, -- black
                 palette.lotusRed, -- red
                 palette.lotusGreen, -- green
                 palette.lotusYellow, -- yellow

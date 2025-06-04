@@ -1,9 +1,14 @@
 ---@class PaletteColors
 local palette = {
-    -- Мои константы
+    -- Мои константы для тёмной темы
     myBgDark = "#282F34",
     myBgVeryDark = "#21272c", -- sumiInk0
     myTextForDarkTheme = "#83c193",
+    
+    -- Мои константы для светлой темы
+    myBgLight = "#F2ECBC",
+    myBgNotLight = "#EDE5A6", -- sumiInk0
+    myTextForLightTheme = "#060114",
 
     -- Bg Shades
     sumiInk0 = "#16161D",
