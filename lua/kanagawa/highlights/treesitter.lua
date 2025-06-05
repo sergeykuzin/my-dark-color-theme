@@ -7,14 +7,14 @@ function M.setup(colors, config)
     local theme = colors.theme
     return {
         -- @variable                       various variable names
-        ["@variable"] = { fg = theme.ui.fg },
+        ["@variable"] = { fg = theme.ui.fg, italic = false },
         -- @variable.builtin (Special)     built-in variable names (e.g. `this`, `self`)
-        ["@variable.builtin"] = { fg = theme.syn.special2, italic = true },
+        ["@variable.builtin"] = { fg = theme.syn.special2, italic = false },
         -- @variable.parameter             parameters of a function
-        ["@variable.parameter"] = { fg = theme.syn.parameter },
+        ["@variable.parameter"] = { fg = theme.syn.parameter, italic = false },
         -- @variable.parameter.builtin     special parameters (e.g. `_`, `it`)
         -- @variable.member                object and struct fields
-        ["@variable.member"] = { fg = theme.syn.identifier },
+        ["@variable.member"] = { fg = theme.syn.identifier, italic = false },
         --
         -- @constant (Constant)              constant identifiers
         -- @constant.builtin       built-in constant values
@@ -48,7 +48,7 @@ function M.setup(colors, config)
         -- @type.definition        identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
         --
         -- @attribute              attribute annotations (e.g. Python decorators, Rust lifetimes)
-        ["@attribute"] = { link = "Constant" },
+        ["@attribute"] = { link = "Constant", italic = false },
         -- @attribute.builtin      builtin annotations (e.g. `@property` in Python)
         -- @property               the key in key/value pairs
         --
@@ -61,23 +61,23 @@ function M.setup(colors, config)
         -- @function.method.call   method calls
         --
         -- @constructor            constructor calls and definitions
-        ["@constructor"] = { fg = theme.syn.special1 },
-        ["@constructor.lua"] = { fg = theme.syn.keyword },
+        ["@constructor"] = { fg = theme.syn.special1, italic = false },
+        ["@constructor.lua"] = { fg = theme.syn.keyword, italic = false },
         -- @operator               symbolic operators (e.g. `+`, `*`)
-        ["@operator"] = { link = "Operator" },
+        ["@operator"] = { link = "Operator", italic = false },
         --
         -- @keyword                keywords not fitting into specific categories
         -- @keyword.coroutine      keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
         -- @keyword.function       keywords that define a function (e.g. `func` in Go, `def` in Python)
         -- @keyword.operator       operators that are English words (e.g. `and`, `or`)
-        ["@keyword.operator"] = { fg = theme.syn.operator },
+        ["@keyword.operator"] = { fg = theme.syn.operator, italic = false },
         -- @keyword.import         keywords for including modules (e.g. `import`, `from` in Python)
-        ["@keyword.import"] = { link = "PreProc" },
+        ["@keyword.import"] = { link = "PreProc", italic = false },
         -- @keyword.type           keywords defining composite types (e.g. `struct`, `enum`)
         -- @keyword.modifier       keywords defining type modifiers (e.g. `const`, `static`, `public`)
         -- @keyword.repeat         keywords related to loops (e.g. `for`, `while`)
         -- @keyword.return         keywords like `return` and `yield`
-        ["@keyword.return"] = vim.tbl_extend("force", { fg = theme.syn.special3 }, config.keywordStyle),
+        ["@keyword.return"] = vim.tbl_extend("force", { fg = theme.syn.special3, italic = false }, config.keywordStyle),
         -- @keyword.debug          keywords related to debugging
         -- @keyword.exception      keywords related to exceptions (e.g. `throw`, `catch`)
         ["@keyword.exception"] = vim.tbl_extend("force", { fg = theme.syn.special3 }, config.statementStyle),
