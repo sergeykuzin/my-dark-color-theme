@@ -65,7 +65,7 @@ function M.setup(colors, config)
 
         -- *Underlined	text that stands out, HTML links
         Underlined = { fg = theme.syn.special1, underline = true },
-        Bold = { bold = true },
+        Bold = { },
         Italic = { italic = true },
 
         -- *Ignore		left blank, hidden  |hl-Ignore|
