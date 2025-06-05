@@ -12,7 +12,7 @@ M.config = {
     commentStyle = { italic = true },
     functionStyle = {},
     keywordStyle = { italic = true },
-    -- statementStyle = { bold = true },
+    statementStyle = {  },
     typeStyle = {},
     transparent = false,
     dimInactive = false,
