@@ -37,7 +37,7 @@ function M.setup(colors, config)
         --  Operator	"sizeof", "+", "*", etc.
         Operator = { fg = theme.syn.operator, bold = false, italic = false },
         --  Keyword	any other keyword
-        Keyword = vim.tbl_extend("force", { fg = theme.syn.keyword, bold = true, italic = false }, { italic = false }),
+        Keyword = vim.tbl_extend("force", { fg = theme.syn.keyword, bold = false, italic = false }, { italic = false }),
         --  Exception	try, catch, throw
         Exception = { fg = theme.syn.special2, bold = false, italic = false },
 
