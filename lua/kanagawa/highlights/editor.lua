@@ -11,9 +11,9 @@ function M.setup(colors, config)
         -- ColorColumn	Used for the columns set with 'colorcolumn'.
         ColorColumn = { bg = theme.ui.bg_p1 },
         -- Conceal		Placeholder characters substituted for concealed text (see 'conceallevel').
-        Conceal = { fg = theme.ui.special },
+        Conceal = { fg = theme.ui.special, bold = true },
         -- CurSearch	Used for highlighting a search pattern under the cursor (see 'hlsearch').
-        CurSearch = { fg = theme.ui.fg, bg = theme.ui.bg_search, bold = true },
+        CurSearch = { fg = theme.ui.fg, bg = theme.ui.bg_search },
         -- Cursor		Character under the cursor.
         Cursor = { fg = theme.ui.bg, bg = theme.ui.fg },
         -- lCursor		Character under the cursor when |language-mapping| is used (see 'guicursor').
