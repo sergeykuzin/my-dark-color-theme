@@ -109,16 +109,16 @@ function M.setup(colors, config)
         ["@comment.note"] = { fg = theme.ui.fg_reverse, bg = theme.diag.hint, bold = true },
         --
         -- @markup.strong          bold text
-        ["@markup.strong"] = { bold = true },
+        ["@markup.strong"] = { bold = true, italic = false },
         -- @markup.italic          italic text
-        ["@markup.italic"] = { italic = true },
+        ["@markup.italic"] = { italic = false },
         -- @markup.strikethrough   struck-through text
-        ["@markup.strikethrough"] = { strikethrough = true },
+        ["@markup.strikethrough"] = { strikethrough = true, italic = false },
         -- @markup.underline       underlined text (only for literal underline markup!)
-        ["@markup.underline"] = { underline = true },
+        ["@markup.underline"] = { underline = true, italic = false },
         --
         -- @markup.heading         headings, titles (including markers)
-        ["@markup.heading"] = { link = "Function" },
+        ["@markup.heading"] = { link = "Function", italic = false },
         -- @markup.heading.1       top-level heading
         -- @markup.heading.2       section heading
         -- @markup.heading.3       subsection heading
@@ -127,18 +127,18 @@ function M.setup(colors, config)
         -- @markup.heading.6       six levels ought to be enough for anybody
         --
         -- @markup.quote           block quotes
-        ["@markup.quote"] = { link = "@variable.parameter" },
+        ["@markup.quote"] = { link = "@variable.parameter", italic = false },
         -- @markup.math            math environments (e.g. `$ ... $` in LaTeX)
-        ["@markup.math"] = { link = "Constant" },
+        ["@markup.math"] = { link = "Constant", italic = false },
         -- @markup.environment     environments (e.g. in LaTeX)
-        ["@markup.environment"] = { link = "Keyword" },
+        ["@markup.environment"] = { link = "Keyword", italic = false },
         --
         -- @markup.link            text references, footnotes, citations, etc.
         -- @markup.link.label      link, reference descriptions
         -- @markup.link.url        URL-style links
-        ["@markup.link.url"] = { link = "@string.special.url" },
+        ["@markup.link.url"] = { link = "@string.special.url", italic = false },
         -- @markup.raw             literal or verbatim text (e.g. inline code)
-        ["@markup.raw"] = { link = "String" },
+        ["@markup.raw"] = { link = "String", italic = false },
         -- @markup.raw.block       literal or verbatim text as a stand-alone block
         --
         -- @markup.list            list markers
