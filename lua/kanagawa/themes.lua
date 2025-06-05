@@ -149,7 +149,7 @@ return {
                 type       = palette.myTextForDarkTheme,
                 regex      = palette.myTextForDarkTheme,
                 deprecated = palette.myTextForDarkTheme,
-                comment    = palette.myTextForDarkTheme,
+                comment    = palette.myCommentText,
                 punct      = palette.myTextForDarkTheme,
                 special1   = palette.myTextForDarkTheme,
                 special2   = palette.myTextForDarkTheme,

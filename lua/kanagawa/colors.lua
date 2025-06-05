@@ -10,6 +10,9 @@ local palette = {
     myBgNotLight = "#FFFFD6", -- sumiInk0
     myTextForLightTheme = "#000000",
 
+    -- Цвет комментариев
+    myCommentText = "#EEEEEE",
+
     -- Bg Shades
     sumiInk0 = "#16161D",
     sumiInk1 = "#181820",
