@@ -12,15 +12,15 @@ function M.setup(colors, config)
         Comment = vim.tbl_extend("force", { fg = theme.syn.comment }, config.commentStyle),
 
         -- *Constant	any constant
-        Constant = { fg = theme.syn.constant },
+        Constant = { fg = theme.syn.constant, bold = false },
         --  String		a string constant: "this is a string"
-        String = { fg = theme.syn.string },
+        String = { fg = theme.syn.string, bold = false },
         --  Character	a character constant: 'c', '\n'
-        Character = { link = "String" },
+        Character = { link = "String", bold = false },
         --  Number		a number constant: 234, 0xff
-        Number = { fg = theme.syn.number },
+        Number = { fg = theme.syn.number, bold = false },
         --  Boolean	a boolean constant: TRUE, false
-        Boolean = { fg = theme.syn.constant },
+        Boolean = { fg = theme.syn.constant, bold = false },
         --  Float		a floating point constant: 2.3e10
         Float = { link = "Number" },
 
