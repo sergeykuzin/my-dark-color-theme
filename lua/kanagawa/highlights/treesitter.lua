@@ -7,17 +7,16 @@ function M.setup(colors, config)
     local theme = colors.theme
     return {
         -- @variable                       various variable names
-        ["@variable"] = { fg = theme.ui.fg, italic = false },
+        ["@variable"] = { fg = theme.ui.fg },
         -- @variable.builtin (Special)     built-in variable names (e.g. `this`, `self`)
-        ["@variable.builtin"] = { fg = theme.syn.special2, italic = false },
+        ["@variable.builtin"] = { fg = theme.syn.special2 },
         -- @variable.parameter             parameters of a function
-        ["@variable.parameter"] = { fg = theme.syn.parameter, italic = false },
+        ["@variable.parameter"] = { fg = theme.syn.parameter },
         -- @variable.parameter.builtin     special parameters (e.g. `_`, `it`)
         -- @variable.member                object and struct fields
-        ["@variable.member"] = { fg = theme.syn.identifier, italic = false },
+        ["@variable.member"] = { fg = theme.syn.identifier },
         --
         -- @constant (Constant)              constant identifiers
-        ["@constant"] = { italic = false },
         -- @constant.builtin       built-in constant values
         -- @constant.macro         constants defined by the preprocessor
         --
@@ -49,12 +48,11 @@ function M.setup(colors, config)
         -- @type.definition        identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
         --
         -- @attribute              attribute annotations (e.g. Python decorators, Rust lifetimes)
-        ["@attribute"] = { link = "Constant", italic = false },
+        ["@attribute"] = { link = "Constant" },
         -- @attribute.builtin      builtin annotations (e.g. `@property` in Python)
         -- @property               the key in key/value pairs
         --
         -- @function               function definitions
-        ["@function"] = { italic = false },
         -- @function.builtin       built-in functions
         -- @function.call          function calls
         -- @function.macro         preprocessor macros
@@ -63,28 +61,28 @@ function M.setup(colors, config)
         -- @function.method.call   method calls
         --
         -- @constructor            constructor calls and definitions
-        ["@constructor"] = { fg = theme.syn.special1, italic = false },
-        ["@constructor.lua"] = { fg = theme.syn.keyword, italic = false },
+        ["@constructor"] = { fg = theme.syn.special1 },
+        ["@constructor.lua"] = { fg = theme.syn.keyword },
         -- @operator               symbolic operators (e.g. `+`, `*`)
-        ["@operator"] = { link = "Operator", italic = false },
+        ["@operator"] = { link = "Operator" },
         --
         -- @keyword                keywords not fitting into specific categories
         -- @keyword.coroutine      keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
         -- @keyword.function       keywords that define a function (e.g. `func` in Go, `def` in Python)
         -- @keyword.operator       operators that are English words (e.g. `and`, `or`)
-        ["@keyword.operator"] = { fg = theme.syn.operator, italic = false },
+        ["@keyword.operator"] = { fg = theme.syn.operator },
         -- @keyword.import         keywords for including modules (e.g. `import`, `from` in Python)
-        ["@keyword.import"] = { link = "PreProc", italic = false },
+        ["@keyword.import"] = { link = "PreProc" },
         -- @keyword.type           keywords defining composite types (e.g. `struct`, `enum`)
         -- @keyword.modifier       keywords defining type modifiers (e.g. `const`, `static`, `public`)
         -- @keyword.repeat         keywords related to loops (e.g. `for`, `while`)
         -- @keyword.return         keywords like `return` and `yield`
-        ["@keyword.return"] = vim.tbl_extend("force", { fg = theme.syn.special3, italic = false }, config.keywordStyle),
+        ["@keyword.return"] = vim.tbl_extend("force", { fg = theme.syn.special3 }, config.keywordStyle),
         -- @keyword.debug          keywords related to debugging
         -- @keyword.exception      keywords related to exceptions (e.g. `throw`, `catch`)
-        ["@keyword.exception"] = vim.tbl_extend("force", { fg = theme.syn.special3, italic = false }, config.statementStyle),
+        ["@keyword.exception"] = vim.tbl_extend("force", { fg = theme.syn.special3 }, config.statementStyle),
 
-        ["@keyword.luap"] = { link = "@string.regex", italic = false },
+        ["@keyword.luap"] = { link = "@string.regex" },
         --
         -- @keyword.conditional         keywords related to conditionals (e.g. `if`, `else`)
         -- @keyword.conditional.ternary ternary operator (e.g. `?`, `:`)
@@ -93,11 +91,11 @@ function M.setup(colors, config)
         -- @keyword.directive.define    preprocessor definition directives
         --
         -- @punctuation.delimiter  delimiters (e.g. `;`, `.`, `,`)
-        ["@punctuation.delimiter"] = { fg = theme.syn.punct, italic = false },
+        ["@punctuation.delimiter"] = { fg = theme.syn.punct },
         -- @punctuation.bracket    brackets (e.g. `()`, `{}`, `[]`)
-        ["@punctuation.bracket"] = { fg = theme.syn.punct, italic = false },
+        ["@punctuation.bracket"] = { fg = theme.syn.punct },
         -- @punctuation.special    special symbols (e.g. `{}` in string interpolation)
-        ["@punctuation.special"] = { fg = theme.syn.special1, italic = false },
+        ["@punctuation.special"] = { fg = theme.syn.special1 },
         --
         -- @comment                line and block comments
         -- @comment.documentation  comments documenting code
@@ -111,16 +109,16 @@ function M.setup(colors, config)
         ["@comment.note"] = { fg = theme.ui.fg_reverse, bg = theme.diag.hint, bold = true },
         --
         -- @markup.strong          bold text
-        ["@markup.strong"] = { bold = true, italic = false },
+        ["@markup.strong"] = { bold = true },
         -- @markup.italic          italic text
         ["@markup.italic"] = { italic = false },
         -- @markup.strikethrough   struck-through text
-        ["@markup.strikethrough"] = { strikethrough = true, italic = false },
+        ["@markup.strikethrough"] = { strikethrough = true },
         -- @markup.underline       underlined text (only for literal underline markup!)
-        ["@markup.underline"] = { underline = true, italic = false },
+        ["@markup.underline"] = { underline = true },
         --
         -- @markup.heading         headings, titles (including markers)
-        ["@markup.heading"] = { link = "Function", italic = false },
+        ["@markup.heading"] = { link = "Function" },
         -- @markup.heading.1       top-level heading
         -- @markup.heading.2       section heading
         -- @markup.heading.3       subsection heading
@@ -129,18 +127,18 @@ function M.setup(colors, config)
         -- @markup.heading.6       six levels ought to be enough for anybody
         --
         -- @markup.quote           block quotes
-        ["@markup.quote"] = { link = "@variable.parameter", italic = false },
+        ["@markup.quote"] = { link = "@variable.parameter" },
         -- @markup.math            math environments (e.g. `$ ... $` in LaTeX)
-        ["@markup.math"] = { link = "Constant", italic = false },
+        ["@markup.math"] = { link = "Constant" },
         -- @markup.environment     environments (e.g. in LaTeX)
-        ["@markup.environment"] = { link = "Keyword", italic = false },
+        ["@markup.environment"] = { link = "Keyword" },
         --
         -- @markup.link            text references, footnotes, citations, etc.
         -- @markup.link.label      link, reference descriptions
         -- @markup.link.url        URL-style links
-        ["@markup.link.url"] = { link = "@string.special.url", italic = false },
+        ["@markup.link.url"] = { link = "@string.special.url" },
         -- @markup.raw             literal or verbatim text (e.g. inline code)
-        ["@markup.raw"] = { link = "String", italic = false },
+        ["@markup.raw"] = { link = "String" },
         -- @markup.raw.block       literal or verbatim text as a stand-alone block
         --
         -- @markup.list            list markers
