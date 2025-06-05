@@ -80,9 +80,9 @@ function M.setup(colors, config)
         ["@keyword.return"] = vim.tbl_extend("force", { fg = theme.syn.special3, italic = false }, config.keywordStyle),
         -- @keyword.debug          keywords related to debugging
         -- @keyword.exception      keywords related to exceptions (e.g. `throw`, `catch`)
-        ["@keyword.exception"] = vim.tbl_extend("force", { fg = theme.syn.special3 }, config.statementStyle),
+        ["@keyword.exception"] = vim.tbl_extend("force", { fg = theme.syn.special3, italic = false }, config.statementStyle),
 
-        ["@keyword.luap"] = { link = "@string.regex" },
+        ["@keyword.luap"] = { link = "@string.regex", italic = false },
         --
         -- @keyword.conditional         keywords related to conditionals (e.g. `if`, `else`)
         -- @keyword.conditional.ternary ternary operator (e.g. `?`, `:`)
@@ -91,11 +91,11 @@ function M.setup(colors, config)
         -- @keyword.directive.define    preprocessor definition directives
         --
         -- @punctuation.delimiter  delimiters (e.g. `;`, `.`, `,`)
-        ["@punctuation.delimiter"] = { fg = theme.syn.punct },
+        ["@punctuation.delimiter"] = { fg = theme.syn.punct, italic = false },
         -- @punctuation.bracket    brackets (e.g. `()`, `{}`, `[]`)
-        ["@punctuation.bracket"] = { fg = theme.syn.punct },
+        ["@punctuation.bracket"] = { fg = theme.syn.punct, italic = false },
         -- @punctuation.special    special symbols (e.g. `{}` in string interpolation)
-        ["@punctuation.special"] = { fg = theme.syn.special1 },
+        ["@punctuation.special"] = { fg = theme.syn.special1, italic = false },
         --
         -- @comment                line and block comments
         -- @comment.documentation  comments documenting code
