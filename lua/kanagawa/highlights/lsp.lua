@@ -52,7 +52,7 @@ function M.setup(colors, config)
 
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
 
-        ["@lsp.typemod.function.readonly"] = { fg = theme.syn.fun },
+        ["@lsp.typemod.function.readonly"] = { fg = theme.syn.fun, bold = true },
     }
 end
 
