@@ -30,14 +30,14 @@ function M.setup(colors, config)
         Function = vim.tbl_extend("force", { fg = theme.syn.fun, bold = false }, config.functionStyle),
 
         -- *Statement	any statement
-        Statement = vim.tbl_extend("force", { fg = theme.syn.statement }, config.statementStyle),
+        Statement = vim.tbl_extend("force", { fg = theme.syn.statement, bold = false }, config.statementStyle),
         --  Conditional	if, then, else, endif, switch, etc.
         --  Repeat		for, do, while, etc.
         --  Label		case, default, etc.
         --  Operator	"sizeof", "+", "*", etc.
-        Operator = { fg = theme.syn.operator },
+        Operator = { fg = theme.syn.operator, bold = false },
         --  Keyword	any other keyword
-        Keyword = vim.tbl_extend("force", { fg = theme.syn.keyword }, config.keywordStyle),
+        Keyword = vim.tbl_extend("force", { fg = theme.syn.keyword, bold = false }, config.keywordStyle),
         --  Exception	try, catch, throw
         Exception = { fg = theme.syn.special2 },
 
