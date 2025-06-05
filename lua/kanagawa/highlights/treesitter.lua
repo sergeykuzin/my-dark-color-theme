@@ -54,6 +54,7 @@ function M.setup(colors, config)
         -- @property               the key in key/value pairs
         --
         -- @function               function definitions
+        ["@function"] = { italic = false },
         -- @function.builtin       built-in functions
         -- @function.call          function calls
         -- @function.macro         preprocessor macros
