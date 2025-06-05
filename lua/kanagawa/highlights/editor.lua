@@ -13,7 +13,7 @@ function M.setup(colors, config)
         -- Conceal		Placeholder characters substituted for concealed text (see 'conceallevel').
         Conceal = { fg = theme.ui.special, bold = true },
         -- CurSearch	Used for highlighting a search pattern under the cursor (see 'hlsearch').
-        CurSearch = { fg = theme.ui.fg, bg = theme.ui.bg_search },
+        CurSearch = { fg = theme.ui.fg, bg = theme.ui.bg_search, bold = true },
         -- Cursor		Character under the cursor.
         Cursor = { fg = theme.ui.bg, bg = theme.ui.fg },
         -- lCursor		Character under the cursor when |language-mapping| is used (see 'guicursor').
@@ -128,7 +128,7 @@ function M.setup(colors, config)
         -- TabLineSel	Tab pages line, active tab page label.
         TabLineSel = { fg = theme.ui.fg_dim, bg = theme.ui.bg_p1 },
         -- Title		Titles for output from ":set all", ":autocmd" etc.
-        Title = { fg = theme.syn.fun, bold = true },
+        Title = { fg = theme.syn.fun },
         -- Visual		Visual mode selection.
         Visual = { bg = theme.ui.bg_visual },
         -- VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
