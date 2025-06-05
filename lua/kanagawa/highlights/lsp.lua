@@ -12,17 +12,17 @@ function M.setup(colors, config)
         -- ["@lsp.type.function"] = { link = "Function" },
         -- ["@lsp.type.interface"] = { link = "Structure" },
         ["@lsp.type.macro"] = { link = "Macro" },
-        ["@lsp.type.method"] = { link = "@function.method" },       -- Function
-        ["@lsp.type.namespace"] = { link = "@module" },             -- Structure
-        ["@lsp.type.parameter"] = { link = "@variable.parameter" }, -- Identifier
+        ["@lsp.type.method"] = { link = "@function.method", italic = false },       -- Function
+        ["@lsp.type.namespace"] = { link = "@module", italic = false },             -- Structure
+        ["@lsp.type.parameter"] = { link = "@variable.parameter", italic = false }, -- Identifier
         -- ["@lsp.type.property"] = { link = "Identifier" },
         -- ["@lsp.type.struct"] = { link = "Structure" },
         -- ["@lsp.type.type"] = { link = "Type" },
         -- ["@lsp.type.typeParameter"] = { link = "TypeDef" },
-        ["@lsp.type.variable"] = { fg = "none" }, -- Identifier
+        ["@lsp.type.variable"] = { fg = "none", italic = false }, -- Identifier
         ["@lsp.type.comment"] = { link = "Comment" },  -- Comment
 
-        ["@lsp.type.const"] = { link = "Constant" },
+        ["@lsp.type.const"] = { link = "Constant", italic = false },
         ["@lsp.type.comparison"] = { link = "Operator" },
         ["@lsp.type.bitwise"] = { link = "Operator" },
         ["@lsp.type.punctuation"] = { link = "Delimiter" },
