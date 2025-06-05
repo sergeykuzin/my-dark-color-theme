@@ -4,7 +4,7 @@ local palette = {
     myBgDark = "#282F34",
     myBgVeryDark = "#21272C", -- sumiInk0
     myTextForDarkTheme = "#83C193",
-    myCommentTextDark = "#EEEEEE",
+    myCommentTextDark = "#52526A",
 
     -- Мои константы для светлой темы
     myBgLight = "#FFFFDD",
