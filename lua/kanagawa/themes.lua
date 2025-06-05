@@ -354,7 +354,7 @@ return {
                 type       = palette.myTextForLightTheme,
                 regex      = palette.myTextForLightTheme,
                 deprecated = palette.myTextForLightTheme,
-                comment    = palette.myTextForLightTheme,
+                comment    = palette.myCommentText,
                 punct      = palette.myTextForLightTheme,
                 special1   = palette.myTextForLightTheme,
                 special2   = palette.myTextForLightTheme,
