@@ -22,12 +22,12 @@ function M.setup(colors, config)
         --  Boolean	a boolean constant: TRUE, false
         Boolean = { fg = theme.syn.constant, bold = false },
         --  Float		a floating point constant: 2.3e10
-        Float = { link = "Number" },
+        Float = { link = "Number", bold = false },
 
         -- *Identifier	any variable name
-        Identifier = { fg = theme.syn.identifier },
+        Identifier = { fg = theme.syn.identifier, bold = false },
         --  Function	function name (also: methods for classes)
-        Function = vim.tbl_extend("force", { fg = theme.syn.fun }, config.functionStyle),
+        Function = vim.tbl_extend("force", { fg = theme.syn.fun, bold = false }, config.functionStyle),
 
         -- *Statement	any statement
         Statement = vim.tbl_extend("force", { fg = theme.syn.statement }, config.statementStyle),
