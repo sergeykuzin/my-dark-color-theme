@@ -39,37 +39,37 @@ function M.setup(colors, config)
         --  Keyword	any other keyword
         Keyword = vim.tbl_extend("force", { fg = theme.syn.keyword, bold = false }, config.keywordStyle),
         --  Exception	try, catch, throw
-        Exception = { fg = theme.syn.special2 },
+        Exception = { fg = theme.syn.special2, bold = false },
 
         -- *PreProc	generic Preprocessor
-        PreProc = { fg = theme.syn.preproc },
+        PreProc = { fg = theme.syn.preproc, bold = false },
         --  Include	preprocessor #include
         --  Define		preprocessor #define
         --  Macro		same as Define
         --  PreCondit	preprocessor #if, #else, #endif, etc.
 
         -- *Type		int, long, char, etc.
-        Type = vim.tbl_extend("force", { fg = theme.syn.type }, config.typeStyle),
+        Type = vim.tbl_extend("force", { fg = theme.syn.type, bold = false }, config.typeStyle),
         --  StorageClass	static, register, volatile, etc.
         --  Structure	struct, union, enum, etc.
         --  Typedef	A typedef
 
         -- *Special	any special symbol
-        Special = { fg = theme.syn.special1 },
+        Special = { fg = theme.syn.special1, bold = false },
         --  SpecialChar	special character in a constant
         --  Tag		you can use CTRL-] on this
         --  Delimiter	character that needs attention
-        Delimiter = { fg = theme.syn.punct },
+        Delimiter = { fg = theme.syn.punct, bold = false },
         --  SpecialComment	special things inside a comment
         --  Debug		debugging statements
 
         -- *Underlined	text that stands out, HTML links
-        Underlined = { fg = theme.syn.special1, underline = true },
+        Underlined = { fg = theme.syn.special1, underline = true, bold = false },
         Bold = { bold = true },
         Italic = { italic = true },
 
         -- *Ignore		left blank, hidden  |hl-Ignore|
-        Ignore = { link = "NonText" },
+        Ignore = { link = "NonText", bold = false },
 
         -- *Error		any erroneous construct
         Error = { fg = theme.diag.error },
@@ -77,8 +77,8 @@ function M.setup(colors, config)
         -- *Todo		anything that needs extra attention; mostly the keywords TODO FIXME WARNING and XXX
         Todo = { fg = theme.ui.fg_reverse, bg = theme.diag.info, bold = true },
 
-        qfLineNr = { link = "lineNr" },
-        qfFileName = { link = "Directory" },
+        qfLineNr = { link = "lineNr", bold = false },
+        qfFileName = { link = "Directory", bold = false },
 
         -- htmlH1 = {},
         -- htmlH2 = {},
