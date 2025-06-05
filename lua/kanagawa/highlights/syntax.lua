@@ -12,7 +12,7 @@ function M.setup(colors, config)
         Comment = vim.tbl_extend("force", { fg = theme.syn.comment, bold = false }, config.commentStyle),
 
         -- *Constant	any constant
-        Constant = { fg = theme.syn.constant, bold = false },
+        Constant = { fg = theme.syn.constant, bold = false, italic = false },
         --  String		a string constant: "this is a string"
         String = { fg = theme.syn.string, bold = false },
         --  Character	a character constant: 'c', '\n'
